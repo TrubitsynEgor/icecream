@@ -24,6 +24,10 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: var(--dark);
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .main-content {

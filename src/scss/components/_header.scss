@@ -13,6 +13,7 @@
   &.fixed {
     position: fixed;
     background-color: var(--main-bg);
+    padding: 0;
   }
 
   &__container {
@@ -98,6 +99,10 @@
 
     &:hover {
       color: var(--active);
+    }
+
+    @media (max-width: 778px) {
+      font-size: 14px;
     }
 
     @include small-tablet {

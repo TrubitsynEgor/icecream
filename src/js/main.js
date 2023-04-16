@@ -6,17 +6,7 @@ import './_components';
 
 'use-strict'
 
-const smoothLinks = document.querySelectorAll('.nav__link');
-for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    const id = smoothLink.getAttribute('href');
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  });
-};
+
 
 
 window.addEventListener('scroll', () => {
