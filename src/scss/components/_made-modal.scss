@@ -1,0 +1,95 @@
+.made-modal {
+
+  &__content {
+    padding: 32px 60px;
+
+    @media (max-width: 600px) {
+      padding: 28px;
+    }
+
+  }
+
+
+  &__btn {}
+
+  &__video-block {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 448px;
+    height: 205px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    @media (max-width: 600px) {
+      width: 224px;
+      height: 199px;
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: var(--dark);
+      transition: all .3s ease-in-out;
+
+    }
+
+    &.play {
+      &::after {
+        display: none;
+      }
+
+      .made-modal__video-play {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__video-play {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 500;
+
+    & svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--light);
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        fill: var(--active);
+      }
+    }
+
+
+
+
+
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  &__descr {
+    max-width: 448px;
+    line-height: 140%;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

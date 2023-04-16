@@ -20,7 +20,7 @@ mobileMenuClose.addEventListener('click', () => {
 const modalBtnOpen = document.querySelector('.open-modal');
 const modalBtnClose = document.querySelector('.modal__btn');
 const modal = document.querySelector('.modal')
-const modalContent = document.querySelector('.modal__content')
+const modalContent = document.querySelectorAll('.modal__content')
 const modalBtnOpenMobile = document.querySelector('.open-mobile-modal');
 
 
@@ -49,9 +49,10 @@ modal.addEventListener('click', () => {
   modal.classList.remove('active')
   document.body.classList.remove('lock')
 })
-
-modalContent.addEventListener('click', (e) => {
-  e.stopPropagation()
+modalContent.forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.stopPropagation()
+  })
 })
 
 const productsModal = document.querySelector('.products-modal')
@@ -77,6 +78,26 @@ productsModal.addEventListener('click', () => {
 })
 
 
+const madeModal = document.querySelector('.made-modal')
+const madeModalOpenBtn = document.querySelector('.made__box-btn')
+const madeModalCloseBtn = document.querySelector('.made-modal__btn')
+
+madeModalOpenBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  madeModal.classList.add('active')
+  document.body.classList.add('lock')
+})
+
+
+madeModalCloseBtn.addEventListener('click', () => {
+  madeModal.classList.remove('active')
+  document.body.classList.remove('lock')
+})
+madeModal.addEventListener('click', () => {
+  madeModal.classList.remove('active')
+  document.body.classList.remove('lock')
+})
+
 
 
 
@@ -94,4 +115,6 @@ for (let smoothLink of smoothLinks) {
     mobileMenuClose.classList.remove('active')
   });
 };
+
+
 
