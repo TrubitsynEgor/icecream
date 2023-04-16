@@ -1,0 +1,32 @@
+<div class="modal">
+
+  <div class="modal__content">
+
+    <button class="btn-reset modal__btn" aria-label="close modal">
+      <svg class="">
+        <use xlink:href="img/sprite.svg#close-modal"></use>
+      </svg>
+    </button>
+
+    <h3 class="modal__title">Buy now</h3>
+
+
+    <div class="modal__cards">
+      <div class="modal__cards-item" tabindex="0" aria-label="buy ice cream">
+        <img class="modal__cards-img" src="img/modal-card_01.png" alt="ice cream">
+        <h4 class="modal__cards-title">ice cream</h4>
+      </div>
+      <div class="modal__cards-item" tabindex="0" aria-label="buy ice coffee">
+        <img class="modal__cards-img" src="img/modal-card_02.png" alt="ice coffee">
+        <h4 class="modal__cards-title">ice coffee</h4>
+      </div>
+      <div class="modal__cards-item" tabindex="0" aria-label="buy milkshake">
+        <img class="modal__cards-img" src="img/modal-card_03.png" alt="milkshake">
+        <h4 class="modal__cards-title">milkshake</h4>
+      </div>
+    </div>
+
+    @include('./form.html')
+
+  </div>
+</div>

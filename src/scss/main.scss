@@ -1,0 +1,19 @@
+//* components basic
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+@import "./components/header";
+//* components main
+@import "./components/hero";
+@import "./components/hero-modal";
+@import "./components/products";
+
+
+@import "./components/footer";
+
+
+//* components reused
+@import "./components/form";
