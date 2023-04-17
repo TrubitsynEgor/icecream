@@ -1,0 +1,343 @@
+.contacts {
+  background-color: var(--main-bg);
+
+
+  &__container {
+    transform: translateY(-100px);
+  }
+
+  &__cards {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    @media (max-width: 900px) {
+      gap: 16px;
+    }
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+
+    }
+
+
+  }
+
+  &__cards-item {
+    padding: 40px;
+    max-width: 368px;
+    min-height: 538px;
+    background-color: var(--light);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+      max-width: 224px;
+      padding: 40px 24px;
+    }
+
+    @media (max-width: 680px) {
+      max-width: 280px;
+      min-height: 412px;
+      padding: 32px 24px;
+    }
+
+
+  }
+
+  &__cards-title {
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 2px 12px;
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    background: var(--active);
+    border-radius: 6px;
+    text-transform: uppercase;
+
+    @media (max-width: 680px) {
+      font-size: 12px;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  &__cards-address {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 22px;
+
+
+  }
+
+  &__cards-city {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+
+    @media (max-width: 900px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 12px;
+
+    }
+
+  }
+
+  &__cards-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #D6936D;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 12px;
+
+    }
+
+  }
+
+  &__cards-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px 0;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+
+    @media (max-width: 680px) {
+      padding: 22px 0;
+
+    }
+  }
+
+  &__cards-contact {
+    padding-top: 32px;
+
+    & a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 183%;
+      color: var(--dark);
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: rgba(#131313, 0.5);
+      }
+
+      @media (max-width: 900px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 12px;
+
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 53px;
+
+
+    & button {
+      padding: 11px 38px;
+      width: 196px;
+      height: 42px;
+
+      @media (max-width: 900px) {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      flex-direction: column;
+
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 95px;
+
+    @media (max-width: 680px) {
+      margin-top: 5px;
+      flex-direction: column;
+      align-items: normal;
+    }
+
+  }
+
+  &__social-title {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 550px;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--light);
+
+
+
+    & span {
+      margin-top: 17px;
+
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 71px;
+      letter-spacing: 0.06em;
+
+      @media (max-width: 900px) {
+        font-size: 48px;
+        line-height: 59px;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: .04;
+      }
+
+    }
+
+    @media (max-width: 900px) {
+      max-width: 350px;
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: normal;
+    }
+
+
+  }
+
+  &__social-link {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-self: center;
+
+    & svg {
+      width: 34px;
+      height: 34px;
+      fill: var(--active);
+      stroke: var(--main-bg);
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        fill: var(--light);
+      }
+
+
+    }
+
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 680px) {
+      margin-top: 15px;
+      align-self: flex-end;
+      gap: 20px;
+    }
+
+
+
+  }
+
+  &__social-phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+
+    & a {
+      color: var(--light);
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: var(--active);
+      }
+    }
+
+    & span {
+
+      color: var(--dark);
+    }
+
+    @media (max-width: 680px) {
+      font-size: 12px;
+    }
+
+  }
+}
+
+
+.schedule {
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: #ABABAB;
+  display: flex;
+  flex-direction: column;
+
+
+  &__day {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--dark);
+  }
+
+
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 680px) {
+    font-size: 12px;
+  }
+}
+
+.contact {}
+
+
+.social {
+  display: flex;
+  gap: 32px;
+  align-self: flex-end;
+}

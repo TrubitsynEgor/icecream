@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--main-bg);
+
+  &__container {
+    padding: 12px 15px;
+    border-top: 1px solid #E1E1E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &__copyright {
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+  }
+}
+
+.container {}

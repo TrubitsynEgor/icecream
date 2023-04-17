@@ -1,0 +1,30 @@
+.modal {
+
+  &__location {}
+
+  &__content {}
+
+  &__btn {}
+
+  &__location-btn {}
+
+  &__title {}
+
+  &__map {
+    & iframe {
+      border-radius: 10px;
+      width: 448px;
+      height: 260px;
+
+      @include mobile {
+        width: 224px;
+        height: 200px;
+      }
+    }
+  }
+
+  &__location-link {
+    margin-top: 20px;
+    padding: 12px 33px;
+  }
+}
